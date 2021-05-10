@@ -7,13 +7,22 @@ public class TriangleArea {
       Triangle triangle1 = new Triangle();
       Triangle triangle2 = new Triangle();
 
-      // TODO: Read and set base and height for triangle1 (use setBase() and setHeight())
-      
-      // TODO: Read and set base and height for triangle2 (use setBase() and setHeight())
-      
-      // TODO: Determine larger triangle (use getArea())
-      
+      triangle1.setBase(scnr.nextDouble());
+      triangle1.setHeight(scnr.nextDouble());
+
+      triangle2.setBase(scnr.nextDouble());
+      triangle2.setHeight(scnr.nextDouble());
+
       System.out.println("Triangle with larger area:");
-      // TODO: Output larger triangle's info (use printInfo())
+      if (triangle1.getArea() > triangle2.getArea()){
+         System.out.println("Triangle 1 ");
+         triangle1.printInfo();
+      }
+      else{
+         System.out.println("Triangle 2 ");
+         triangle2.printInfo();
+      }
+      
+      scnr.close();
    }
 }
